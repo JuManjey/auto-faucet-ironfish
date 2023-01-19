@@ -1,6 +1,6 @@
 touch /root/logfile.log
 nano /etc/crontab
-*/2 * * * * root echo "ваша_почта@gmail.com" | ironfish faucet | tee -a /root/logfile.log
+*/5 * * * * root echo "ваша_почта@gmail.com" | ironfish faucet | tee -a /root/logfile.log
 CTRL+O
 CTRL+X
 systemctl enable cron && systemctl start cron && systemctl status cron
